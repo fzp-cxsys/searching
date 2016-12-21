@@ -65,4 +65,8 @@ public class Document implements Serializable {
     public void setWordsTfIdf(Map<Integer, Double> wordsTfIdf) {
         this.wordsTfIdf = wordsTfIdf;
     }
+
+    public double getTfIdfByWord(String word){
+        return this.getWordsTfIdf().get(this.getWordsHash().get(word));
+    }
 }
