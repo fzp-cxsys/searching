@@ -13,6 +13,7 @@ hs_err_pid*
 
 #IDE configuration
 .idea/
+*.iml
 
 # Maven
 target/
